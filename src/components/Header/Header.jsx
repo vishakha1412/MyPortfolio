@@ -9,7 +9,7 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
          
         <div className="text-xl font-bold tracking-wide ">
-          <NavLink to='/' className='font-serif'>📝 VISH</NavLink>
+          <NavLink to='/' className='font-serif'>𝓿𝓲𝓼𝓱</NavLink>
 
         </div>
 
@@ -20,7 +20,7 @@ const Header = () => {
            <NavLink to="/skill" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Skills</NavLink> 
             <NavLink to="/project" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Project</NavLink> 
           <NavLink to="/experience" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Experience</NavLink>
-           <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl  font-serif font-bold">Social Media</NavLink> 
+           <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl  font-serif font-bold">Contact</NavLink> 
 
         </div>
 
@@ -63,7 +63,7 @@ const Header = () => {
            <NavLink to="/skill" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Skills</NavLink> 
             <NavLink to="/project" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Project</NavLink> 
           <NavLink to="/experience" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Experience</NavLink>
-           <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Social Media</NavLink> 
+           <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Contact</NavLink> 
         </div>
       )}
     </nav>

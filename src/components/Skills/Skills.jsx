@@ -9,20 +9,23 @@ export const Skills = () => {
   { name: 'JavaScript', url: '/' },
   { name: 'React.js', url: ' https://react.dev/' },
   { name: 'Tailwind', url: ' https://tailwindcss.com/docs/installation/using-vite' },
-//  { name: 'Node.js', url: 'https://twitter.com/vishakha_codes' },
-  //{ name: 'Express.js', url: 'https://twitter.com/vishakha_codes' },
-//  { name: 'MongoDB', url: 'https://twitter.com/vishakha_codes' },
+  { name: 'Node.js', url: 'https://twitter.com/vishakha_codes' },
+  { name: 'Express.js', url: 'https://twitter.com/vishakha_codes' },
+ { name: 'MongoDB', url: 'https://twitter.com/vishakha_codes' },
   { name: 'Java', url: 'https://twitter.com/vishakha_codes' },
   { name: 'Git', url: 'https://twitter.com/vishakha_codes' },
   { name: 'Responsive Design', url: 'https://twitter.com/vishakha_codes' },
   { name: 'Redux', url: ' https://redux-toolkit.js.org/' },
- // { name: 'Mongoose', url: 'https://twitter.com/vishakha_codes' },
+ { name: 'Mongoose', url: 'https://twitter.com/vishakha_codes' },
   { name: 'API Integration', url: 'https://twitter.com/vishakha_codes' },
   { name: 'Bootstrap', url: 'https://getbootstrap.com/' },
  // { name: 'Figma', url: 'https://twitter.com/vishakha_codes' },
   { name: 'VS Code', url: 'https://twitter.com/vishakha_codes' },
   { name: 'Postman', url: 'https://twitter.com/vishakha_codes' },
-  {name:'Python',url:'https://www.python.org/'}
+  {name:'Python',url:'https://www.python.org/'},
+  {name:'canva',url:'https://www.canva.com/'},
+ 
+  {name:'DSA',url:'https://leetcode.com/'},
  
 
  ]

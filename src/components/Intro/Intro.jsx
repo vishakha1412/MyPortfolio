@@ -36,7 +36,8 @@ import React from 'react';
 
   return (
     <>
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-teal-400 via-blue-600 to-teal-400 px-6 text-white">
+    <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-teal-400 via-blue-600 to-teal-400 px-6 text-white " 
+    style={{backgroundImage: 'url("/bg-1.jpg")', backgroundRepeat: 'no-repeat' , backgroundSize: 'cover'}}>
       <motion.div
         className="flex gap-1 flex-wrap text-4xl sm:text-5xl md:text-6xl font-extrabold"
         variants={container}

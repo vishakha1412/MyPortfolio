@@ -7,7 +7,7 @@ export const Social = () => {
   const navigate=useNavigate();
 
   const socialLinks = [
-  { name: 'LinkedIn', url:'www.linkedin.com/in/vishakha-sharma-0a056032a' },
+  { name: 'LinkedIn', url:'https://www.linkedin.com/in/vishakha-sharma-0a056032a' },
   { name: 'Instagram', url: 'https://www.instagram.com/vishakhasharma8810/' },
   { name: 'Github', url: 'https://github.com/vishakha14' },
   { name: 'Email', url: 'mailto:vish60617@gmail.com' },
@@ -36,6 +36,11 @@ export const Social = () => {
           </a>
         ))}
       </div>
+       <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
+              <NavLink to='/' className="text-lg font-semibold">
+                Back to Home
+              </NavLink>
+            </button>
     </div>
 
    
