@@ -17,14 +17,15 @@ export const Project = () => {
       <NavLink to ='https://myntraclone-sigma.vercel.app/'><MyntraClon/></NavLink>
       <NavLink to='https://book-store-tau-mauve.vercel.app/'><BookStore /></NavLink>
        <NavLink to='https://trend-teller.vercel.app/'><Trendteller/></NavLink>
+       
+    
+       
+       </div>
         <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
                <NavLink to='/experience' className="text-lg font-semibold">
                  Explore my Experience
                </NavLink>
              </button>
-    
-       
-       </div>
      </div>
      </>
   )

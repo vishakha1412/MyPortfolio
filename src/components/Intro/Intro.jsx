@@ -2,6 +2,7 @@
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import React from 'react';
+import { About } from '../About/About';
  
  
 
@@ -36,10 +37,10 @@ import React from 'react';
 
   return (
     <>
-    <section className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-teal-400 via-blue-600 to-teal-400 px-6 text-white " 
-    style={{backgroundImage: 'url("/bg-1.jpg")', backgroundRepeat: 'no-repeat' , backgroundSize: 'cover'}}>
+    <section className="min-h-screen flex flex-col justify-center items-center  px-6 text-white " 
+    style={{backgroundImage: 'url("/bg-1.jpg")', backgroundRepeat: 'no-repeat' , backgroundSize: 'cover', backgroundPosition: 'center' ,zIndex:'60'}}>  
       <motion.div
-        className="flex gap-1 flex-wrap text-4xl sm:text-5xl md:text-6xl font-extrabold"
+        className="flex gap-1 flex-wrap text-4xl sm:text-5xl md:text-6xl font-extrabold z-50 shadow-2xl p-6 bg-white/20 backdrop-blur-md rounded-lg "
         variants={container}
         animate="animate"
       >
@@ -55,7 +56,7 @@ import React from 'react';
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1 }}
-        className="mt-6 text-center text-lg sm:text-xl md:text-2xl max-w-xl"
+        className="mt-6 text-center text-lg sm:text-xl md:text-2xl max-w-xl z-50"
       >
         Frontend Developer | Building expressive interfaces with React & Tailwind ✨
       </motion.p>
@@ -68,19 +69,23 @@ import React from 'react';
       > 
       </motion.div>
       <motion.div className='flex space-x-4'>
-      <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
+      <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition z-50">
         <a href="/VishakhaResume.pdf" download className="text-lg font-semibold">
           Download Resume
         </a>
       </button>
-      <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
+      <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition z-50">
         <NavLink to='/about' className="text-lg font-semibold">
           About Me
         </NavLink>
       </button>
       </motion.div>
+       
+
+     
       
     </section>
+     
    
   
  
