@@ -1,10 +1,9 @@
 import React from 'react'
 
-export const Trendteller = () => {
+export const Trend = () => {
   return (
-     
      <>
-     <div data-aos="fade-right"
+      <div data-aos="fade-right"
               className="bg-white/10 backdrop-blur-md border border-white/20 p-10 shadow hover:scale-105 transition transform  rounded-4xl animation-spin curser-arrow object-fill" >
                 <h1 className='font-extrabold text-pink-500 text-3xl text-center'>Trend-Teller</h1>
                 <img src="/trendteller.png" alt="Aura List" className='w-full h-84 object-cover rounded-lg my-5' />
@@ -18,7 +17,6 @@ export const Trendteller = () => {
 
      </div>
    
-
      </>
   )
 }
