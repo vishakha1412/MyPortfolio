@@ -18,6 +18,7 @@ const Header = () => {
           
            <NavLink to="/about" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif ">About</NavLink> 
            <NavLink to="/skill" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Skills</NavLink> 
+             <NavLink to="/landingproject" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">MyProjects</NavLink>
             <NavLink to="/project" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Project</NavLink> 
           <NavLink to="/experience" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Experience</NavLink>
            <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl  font-serif font-bold">Contact</NavLink> 
@@ -61,6 +62,7 @@ const Header = () => {
         <div className="md:hidden px-4 pb-4 space-y-2      text-white flex flex-col">
             <NavLink  to="/about" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">About</NavLink> 
            <NavLink to="/skill" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Skills</NavLink> 
+           <NavLink to="/landingproject" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">MyProjects</NavLink>
             <NavLink to="/project" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Project</NavLink> 
           <NavLink to="/experience" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Experience</NavLink>
            <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Contact</NavLink> 

@@ -1,0 +1,56 @@
+export const projects = [
+  {
+    id: 1,
+    title: "Aura-List",
+    image: "/auralist.png",
+    domain: "Web Development",
+    description: "Track moods, moments, and memories with vibrant UI.",
+    tech: ["React", "Tailwind", "LocalStorage"],
+     link: "https://aura-list.vercel.app/",
+
+  },
+  {
+    id: 2,
+    title: "BookStore",
+    image: "/bookstore.png",
+    link: "https://book-store-tau-mauve.vercel.app/",
+    domain: "Web Development",
+    description: "Google Books API explorer with mood-based recommendations.",
+    tech: ["React", "CSS", "Google Books API"],
+  },
+  {
+    id: 3,
+    title: "MyntraClon",
+     image: "/myntra.png",
+     link: "https://myntraclone-sigma.vercel.app/",
+    domain: "Web Development",
+    description: " E-commerce site clone with product browsing and cart features.",
+    tech:  ["HTML", "CSS", "JavaScript" ,"LocalStorage"],
+  },
+  {
+    id: 4,
+    title: "Trend Teller",
+    image: "/trendteller.png",
+    link: "https://trend-teller.vercel.app/",
+    domain: "Web Development",
+    description: "AI-powered trend analysis and prediction platform.",
+    tech: ["React", "CSS", "AI APIs"],
+  },
+  {
+    id: 5,
+    title: "Portfolio Website",
+    image: "/portfolio.png",
+    link: "vishportfolio.vercel.app",
+    domain: "Web Development",
+    description: "Personal portfolio showcasing projects and skills.",
+    tech: ["React", "Tailwind", "AOS"],
+  },{
+    id: 6,
+    title: "MystryMix",
+    image: "/mystrymix.png",
+    link: "https://mysterymix.vercel.app/",
+    domain: "Web Development",
+    description: "Random passworrd generator with customizable options.",
+    tech: ["React", "CSS", "Music APIs"],
+  }
+];

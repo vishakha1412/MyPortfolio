@@ -4,7 +4,7 @@ import { AuraList } from './AuraList'
 import { NavLink } from 'react-router'
 import { MyntraClon } from './MyntraClon'
 import { BookStore } from './BookStore'
-import { Trendteller } from './TrendTeller'
+ 
 import { Trend } from './Trend'
 //import { TrendTeller } from './TrendTeller'
 //  <NavLink to='https://trend-teller.vercel.app/'><TrendTeller /></NavLink>

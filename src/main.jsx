@@ -14,6 +14,8 @@ import { Social } from './components/SocialMedia/Social'
   
 import { RouterProvider } from 'react-router-dom'
 import { AuraList } from './components/Project/AuraList.jsx'
+import ProjectLanding from './components/Project/ProjectLanding.jsx'
+import DomainProjects from './components/Project/DomainProjects.jsx'
 
 const router= createBrowserRouter(
   createRoutesFromElements([
@@ -23,8 +25,10 @@ const router= createBrowserRouter(
       <Route path='experience' element={<Experience />} />
       <Route path='footer' element={<Footer />} />
        
-    
-      <Route path='project' element={<Project />} >
+    <Route path ="/landingproject" element={<ProjectLanding/>}/>
+    <Route path="/projects/:domain" element={<DomainProjects/>} />
+
+   <Route path='project' element={<Project />} >
       <Route path='aura' element={<AuraList/>}/>
       </Route>
       <Route path='skill' element={<Skill />} />
