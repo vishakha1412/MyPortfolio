@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { domains } from "./domain";
-
+import { NavLink } from "react-router-dom";
 const ProjectLanding = () => {
   const navigate = useNavigate();
 
@@ -19,6 +19,11 @@ const ProjectLanding = () => {
           </button>
         ))}
       </div>
+      <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
+               <NavLink to='/experience' className="text-lg font-semibold">
+                 Explore my Experience
+               </NavLink>
+             </button>
     </div>
   );
 };

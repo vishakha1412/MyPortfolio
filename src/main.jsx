@@ -6,16 +6,13 @@ import { createBrowserRouter, createRoutesFromElements, Route } from 'react-rout
 import { About } from './components/About/About'
 import { Experience } from './components/Experience/Experience'
 import { Footer } from './components/Footer/Footer'
- 
 import { Intro } from './components/Intro/Intro'
-import { Project } from './components/Project/Project'
-import { Skill } from './components/Skills/Skill'
-import { Social } from './components/SocialMedia/Social'  
-  
+import { Social } from './components/SocialMedia/Social'    
 import { RouterProvider } from 'react-router-dom'
-import { AuraList } from './components/Project/AuraList.jsx'
 import ProjectLanding from './components/Project/ProjectLanding.jsx'
 import DomainProjects from './components/Project/DomainProjects.jsx'
+import { LandingSkill } from './components/Skills/LandingSkill.jsx'
+import { SkillPage } from './components/Skills/SkillPage.jsx'
 
 const router= createBrowserRouter(
   createRoutesFromElements([
@@ -27,11 +24,10 @@ const router= createBrowserRouter(
        
     <Route path ="/landingproject" element={<ProjectLanding/>}/>
     <Route path="/projects/:domain" element={<DomainProjects/>} />
-
-   <Route path='project' element={<Project />} >
-      <Route path='aura' element={<AuraList/>}/>
-      </Route>
-      <Route path='skill' element={<Skill />} />
+     
+    
+      <Route path='/skill' element={<LandingSkill/>} />
+      <Route path="/skill/:domain" element={<SkillPage/>} />
       <Route path='social' element={<Social />} />
     </Route>
   ])
