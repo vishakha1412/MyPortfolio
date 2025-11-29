@@ -46,5 +46,10 @@ export const LandingSkill = () => (
         </motion.div>
       ))}
     </div>
+    <button className="mt-10  bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500  backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
+            <NavLink to='/landingproject' className="text-lg font-semibold">
+              Explore my Projects
+            </NavLink>
+          </button>
   </motion.div>
 )

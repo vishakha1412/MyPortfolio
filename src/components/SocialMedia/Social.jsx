@@ -37,7 +37,7 @@ export const Social = () => {
           </a>
         ))}
       </div>
-       <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
+       <button className="mt-10 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500  backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
               <NavLink to='/' className="text-lg font-semibold">
                 Back to Home
               </NavLink>

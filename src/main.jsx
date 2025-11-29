@@ -13,6 +13,7 @@ import ProjectLanding from './components/Project/ProjectLanding.jsx'
 import DomainProjects from './components/Project/DomainProjects.jsx'
 import { LandingSkill } from './components/Skills/LandingSkill.jsx'
 import { SkillPage } from './components/Skills/SkillPage.jsx'
+import { Certificate } from './components/Certificate/Certificate.jsx'
 
 const router= createBrowserRouter(
   createRoutesFromElements([
@@ -21,11 +22,9 @@ const router= createBrowserRouter(
       <Route path='about' element={<About />} />
       <Route path='experience' element={<Experience />} />
       <Route path='footer' element={<Footer />} />
-       
-    <Route path ="/landingproject" element={<ProjectLanding/>}/>
-    <Route path="/projects/:domain" element={<DomainProjects/>} />
-     
-    
+      <Route path ="/landingproject" element={<ProjectLanding/>}/>
+      <Route path="/projects/:domain" element={<DomainProjects/>} />
+      <Route path='/certificate' element={<Certificate/>} />
       <Route path='/skill' element={<LandingSkill/>} />
       <Route path="/skill/:domain" element={<SkillPage/>} />
       <Route path='social' element={<Social />} />

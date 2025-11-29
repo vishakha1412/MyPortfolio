@@ -21,6 +21,8 @@ const Header = () => {
              <NavLink to="/landingproject" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">MyProjects</NavLink>
             
           <NavLink to="/experience" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Experience</NavLink>
+          
+           <NavLink to="/certificate" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif ">Certificate</NavLink> 
            <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl  font-serif font-bold">Contact</NavLink> 
 
         </div>
@@ -65,6 +67,7 @@ const Header = () => {
            <NavLink to="/landingproject" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">MyProjects</NavLink>
               
           <NavLink to="/experience" className="hover:text-white-200 transition  hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Experience</NavLink>
+           <NavLink to="/certificate" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif ">Certificate</NavLink> 
            <NavLink to="/social" className="hover:text-white-200 transition hover:bg-blue-600  hover:px-2 hover:rounded-4xl font-bold font-serif">Contact</NavLink> 
         </div>
       )}
