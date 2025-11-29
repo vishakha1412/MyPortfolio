@@ -5,7 +5,8 @@ const ProjectLanding = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="p-8 bg-blue-500 min-h-screen flex flex-col  ">
+    <>
+    <div className="p-8 bg-blue-500 min-h-screen flex flex-col  " style={{ backgroundImage: 'url("/bg1.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <h1 className="text-3xl font-bold mb-6">Explore Projects by Domain</h1>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {domains.map(({ name, icon }) => (
@@ -19,12 +20,15 @@ const ProjectLanding = () => {
           </button>
         ))}
       </div>
-      <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition">
+      <button className="mt-10 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-full shadow-lg hover:bg-white/30 transition w-[40%] mx-auto">
                <NavLink to='/experience' className="text-lg font-semibold">
                  Explore my Experience
                </NavLink>
              </button>
+     
     </div>
+    
+     </>
   );
 };
 

@@ -18,7 +18,7 @@ export const Social = () => {
   return (
     <>
      <div className="min-h-screen flex flex-col  items-center  bg-gradient-to-br  from-teal-400 via-blue-600 to-teal-400 px-6 text-white" 
-     style={{ scrollBehavior: 'smooth', backgroundImage:'url(/bg-1.jpg)' , backgroundSize: 'cover', backgroundPosition: 'center' }}> 
+     style={{ scrollBehavior: 'smooth', backgroundImage:'url(/bg1.jpg)' , backgroundSize: 'cover', backgroundPosition: 'center' }}> 
     
       <h1 className="text-4xl font-bold mb-8 flex items-center gap-2  mt-5">
         <span>🚀</span> CONNECT WITH ME...

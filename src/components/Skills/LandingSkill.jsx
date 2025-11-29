@@ -17,9 +17,10 @@ export const LandingSkill = () => (
     initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     transition={{ duration: 0.6 }}
+     style={{ backgroundImage: 'url("/bg1.jpg")', backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }}
   >
     <motion.h1
-      className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-10"
+      className="text-4xl md:text-5xl font-extrabold  text-amber-200 mb-10"
       initial={{ y: -30, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}

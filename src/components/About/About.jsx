@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 export const About = () => {
 return (
     <>
-        <div className="min-h-screen bg-gradient-to-br   from-teal-400 via-blue-600 to-teal-400 text-center  px-6 text-white flex flex-col justify-center items-center"  style={{backgroundImage: 'url("/bg-2.jpg")', backgroundRepeat: 'no-repeat' , backgroundSize: 'cover',opacity:'0.9' ,}}>
+        <div className="min-h-screen bg-gradient-to-br   from-teal-400 via-blue-600 to-teal-400 text-center  px-6 text-white flex flex-col justify-center items-center"  style={{backgroundImage: 'url("/bg1.jpg")', backgroundRepeat: 'no-repeat' , backgroundSize: 'cover',opacity:'0.9' ,}}>
             <h1 className='text-center text-2xl border-b-4'>About Me</h1>
             <div className='flex max-md:flex-col md:flex-row items-center justify-center max-md:mb-6 md:mb-0 md:space-x-6 '>
                 
@@ -26,11 +26,11 @@ return (
           
             </div>
               <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-6   text-center  flex justify-center items-center '>
-                <div className='bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 shadow-lg  font-semibold transition-all duration-150  hover:outline-amber-200' data-aos="fade-up">
+                <div className='bg-gray/20 backdrop-blur-md border border-white/20 rounded-xl p-4 shadow-lg  font-semibold transition-all duration-150  hover:outline-amber-200' data-aos="fade-up">
                   <h2 className='text-xl mb-2'>Education</h2>
                   <p>B.Tech in Computer Science<br/>JSS ACADEMY OF TECHNICAL EDUCATION<br/>2024 - 2028</p>
                 </div>
-                <div className='bg-white/10 backdrop-blur-md border border-white/20 rounded-xl p-4 shadow-lg  font-semibold transition-all duration-150  hover:outline-amber-200' data-aos="fade-up" data-aos-delay="100">
+                <div className='bg-gray/20 backdrop-blur-md border border-white/20 rounded-xl p-4 shadow-lg  font-semibold transition-all duration-150  hover:outline-amber-200' data-aos="fade-up" data-aos-delay="100">
                   <h2 className='text-xl mb-2'>Interests</h2>
                   <p>Frontend Development, UI/UX Design, Problem Solving</p>
                 </div>
