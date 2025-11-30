@@ -1,5 +1,7 @@
  import { useParams } from "react-router-dom";
 import { projects } from "./projects";
+import { motion } from 'framer-motion'
+import { NavLink } from 'react-router-dom'
 
 const DomainProjects = () => {
   const { domain } = useParams();
@@ -71,6 +73,19 @@ const DomainProjects = () => {
               </div>
             ))}
           </div>
+            <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.5 }}
+        className="mt-12 flex justify-center"
+      >
+        <NavLink
+          to="/landingproject"
+   className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-600 hover:via-cyan-600 hover:to-blue-600 text-white px-8 py-3 rounded-full shadow-xl font-semibold text-lg transition-all duration-300"
+        >
+          Back to Projects
+        </NavLink>
+      </motion.div>
         </div>
       )}
     </>
