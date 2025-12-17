@@ -25,6 +25,12 @@ const certificates = [
     date: 'November 2025',
     image: '/cert3.png',
   },
+   {
+    title: 'Secure Verse',
+    issuer: 'TechTribe Community',
+    date: 'Decemer 2025',
+    image: '/secureverse.jpg',
+  },
 ];
 export const Certificate = () => {
   const [selectedCert, setSelectedCert] = useState(null);

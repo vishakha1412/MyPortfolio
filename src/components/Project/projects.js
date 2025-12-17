@@ -40,7 +40,7 @@ export const projects = [
     id: 5,
     title: "Portfolio Website",
     image: "/portfolio.png",
-    link: "vishportfolio.vercel.app",
+    link: "https://my-portfolio-gamma-pink-88.vercel.app/",
     domain: "Web Development",
     description: "Personal portfolio showcasing projects and skills.",
     tech: ["React", "Tailwind", "AOS"],
@@ -52,5 +52,14 @@ export const projects = [
     domain: "Web Development",
     description: "Random passworrd generator with customizable options.",
     tech: ["React", "CSS", "Music APIs"],
+  },
+  {
+    id: 7,
+    title: "AyurTrace",
+    image: "/ayurtrace.png",
+    link: "https://ayur-trace-psi.vercel.app/",
+    domain: "Web Development",
+    description: "Track Ayurvedic products and their benefits.Trace the journey of every herb — from seed to supplement — with full transparency, trust, and tradition.",
+    tech: ["React", "Tailwind"],
   }
 ];
