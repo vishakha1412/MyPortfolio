@@ -35,7 +35,7 @@ export const Intro = () => {
 
   return (
     <section
-      className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 md:px-12 py-10 text-white text-center"
+      className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-6 md:px-12 py-10 text-white text-center h-screen"
       style={{
         backgroundImage: 'url("/bg1.jpg")',
         backgroundRepeat: 'no-repeat',
@@ -43,7 +43,7 @@ export const Intro = () => {
         backgroundPosition: 'center',
         zIndex: '60',
       }}
-      aria-label="Intro section with animated name and role"
+      aria-label="Intro section with animated name and role heading"
     >
       {/* Animated Name */}
       <motion.div
@@ -69,7 +69,7 @@ export const Intro = () => {
         className="mt-6 text-base sm:text-lg md:text-xl lg:text-2xl max-w-[90%] sm:max-w-xl z-50"
         data-aos="fade-up"
       >
-        Frontend Developer | Building expressive interfaces with React & Tailwind ✨
+        MERN Developer | Building expressive interfaces with React ,Tailwind & NODE ✨
       </motion.p>
 
     
@@ -77,12 +77,12 @@ export const Intro = () => {
   initial={{ opacity: 0, scale: 0.95 }}
   animate={{ opacity: 1, scale: 1 }}
   transition={{ delay: 1.5, duration: 0.8 }}
-  className="mt-10 flex flex-col sm:flex-row items-center gap-4 z-50"
+  className="mt-10 flex flex-col  md:flex-row items-center gap-4 z-50"
   data-aos="fade-up"
 >
   
   <button
-    className="w-full sm:w-auto px-6 py-3 rounded-full font-semibold text-white shadow-lg transition-all duration-300  bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-pink-400"
+    className="px-4 py-2 rounded-lg font-semibold text-black shadow-lg transition-all duration-300 bg-gradient-to-r from-fuchsia-300 via-slate-300 to-cyan-300 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 m-2 min-w-2xs xl:min-w-xl max-md:min-w-full text-center hover:scale-105 hover:shadow-xl font-serif hover:text-white"
     aria-label="Download Resume"
   >
     <a href="/VishakhaResume.pdf" download className="block text-center text-base sm:text-lg">
@@ -92,7 +92,7 @@ export const Intro = () => {
 
  
   <button
-    className="w-full sm:w-auto px-6 py-3 rounded-full font-semibold text-white shadow-lg transition-all duration-300 bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400"
+    className="px-4 py-2 rounded-lg font-semibold text-black shadow-lg transition-all duration-300 bg-gradient-to-r from-fuchsia-300 via-slate-300 to-cyan-300 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 m-2 max-md:min-w-full text-center hover:scale-105 hover:shadow-xl font-serif hover:text-white min-w-2xs xl:min-w-xl "
     aria-label="Navigate to About Me"
   >
     <NavLink to='/about' className="block text-center text-base sm:text-lg">

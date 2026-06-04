@@ -61,14 +61,24 @@ const DomainProjects = () => {
                     <span className="font-semibold text-pink-500">Tech:</span>{" "}
                     {project.tech.join(", ")}
                   </p>
-<a
+                  <div className="flex items-center gap-4">
+             <a
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-block bg-gradient-to-r from-pink-500 to-purple-500 text-white px-5 py-2 rounded-full hover:from-pink-600 hover:to-purple-600 transition duration-300"
+                    className="inline-block mt-4 text-sm font-medium text-blue-600 hover:underline transition duration-300 float-start"
                   >
                     View Project →
                   </a>
+                    <NavLink
+                              to={project.github}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-block float-end mt-4 ml-4 text-sm font-medium text-blue-600 hover:underline"
+                          >
+                              View Code →
+                          </NavLink>
+                          </div>
                 </div>
               </div>
             ))}
@@ -81,7 +91,7 @@ const DomainProjects = () => {
       >
         <NavLink
           to="/landingproject"
-   className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-600 hover:via-cyan-600 hover:to-blue-600 text-white px-8 py-3 rounded-full shadow-xl font-semibold text-lg transition-all duration-300"
+   className="px-4 py-2 rounded-lg font-semibold text-black shadow-lg transition-all duration-300 bg-gradient-to-r from-fuchsia-300 via-slate-300 to-cyan-300 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 m-2 min-w-md max-md:min-w-full text-center hover:scale-105 hover:shadow-xl font-serif hover:text-white mt-10"
         >
           Back to Projects
         </NavLink>

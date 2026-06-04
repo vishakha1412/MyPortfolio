@@ -14,11 +14,13 @@ import DomainProjects from './components/Project/DomainProjects.jsx'
 import { LandingSkill } from './components/Skills/LandingSkill.jsx'
 import { SkillPage } from './components/Skills/SkillPage.jsx'
 import { Certificate } from './components/Certificate/Certificate.jsx'
-
+import { Home } from './pages/Home.jsx'
+// <Route path='/' element={<Intro/>}/>
 const router= createBrowserRouter(
   createRoutesFromElements([
     <Route path='/' element={<App/>}>
-      <Route path='/' element={<Intro/>}/>
+      <Route path='/' element={<Home/>}/>
+     
       <Route path='about' element={<About />} />
       <Route path='experience' element={<Experience />} />
       <Route path='footer' element={<Footer />} />
