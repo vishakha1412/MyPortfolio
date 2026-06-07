@@ -1,11 +1,22 @@
- import { useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { projects } from "./projects";
-import { motion } from 'framer-motion'
-import { NavLink } from 'react-router-dom'
+import { motion } from 'framer-motion';
+import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
 
 const DomainProjects = () => {
   const { domain } = useParams();
   const filtered = projects.filter((p) => p.domain === domain);
+
+  const [showModal, setShowModal] = useState(false);
+
+  const handleViewProject = (link) => {
+    if (link) {
+      window.open(link, "_blank", "noopener,noreferrer");
+    } else {
+      setShowModal(true);
+    }
+  };
 
   return (
     <>
@@ -29,7 +40,8 @@ const DomainProjects = () => {
           }
         `}
       </style>
-{filtered.length === 0 ? (
+
+      {filtered.length === 0 ? (
         <div className="p-8 bg-gradient-to-br from-yellow-100 to-pink-200 min-h-screen flex items-center justify-center animate-fade-in">
           <h2 className="text-2xl font-semibold text-gray-700 text-center">
             No projects found in the "<span className="text-pink-600">{domain}</span>" domain.
@@ -62,40 +74,65 @@ const DomainProjects = () => {
                     {project.tech.join(", ")}
                   </p>
                   <div className="flex items-center gap-4">
-             <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block mt-4 text-sm font-medium text-blue-600 hover:underline transition duration-300 float-start"
-                  >
-                    View Project →
-                  </a>
+                    {/* Conditional navigation */}
+                    <button
+                      onClick={() => handleViewProject(project.link)}
+                      className="inline-block mt-4 text-sm font-medium text-blue-600 hover:underline transition duration-300 float-start"
+                    >
+                      View Project →
+                    </button>
                     <NavLink
-                              to={project.github}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-block float-end mt-4 ml-4 text-sm font-medium text-blue-600 hover:underline"
-                          >
-                              View Code →
-                          </NavLink>
-                          </div>
+                      to={project.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block float-end mt-4 ml-4 text-sm font-medium text-blue-600 hover:underline"
+                    >
+                      View Code →
+                    </NavLink>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
-            <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5 }}
-        className="mt-12 flex justify-center"
-      >
-        <NavLink
-          to="/landingproject"
-   className="px-4 py-2 rounded-lg font-semibold text-black shadow-lg transition-all duration-300 bg-gradient-to-r from-fuchsia-300 via-slate-300 to-cyan-300 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 m-2 min-w-md max-md:min-w-full text-center hover:scale-105 hover:shadow-xl font-serif hover:text-white mt-10"
-        >
-          Back to Projects
-        </NavLink>
-      </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5 }}
+            className="mt-12 flex justify-center"
+          >
+            <NavLink
+              to="/landingproject"
+              className="px-4 py-2 rounded-lg font-semibold text-black shadow-lg transition-all duration-300 bg-gradient-to-r from-fuchsia-300 via-slate-300 to-cyan-300 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 m-2 min-w-md max-md:min-w-full text-center hover:scale-105 hover:shadow-xl font-serif hover:text-white mt-10"
+            >
+              Back to Projects
+            </NavLink>
+          </motion.div>
+        </div>
+      )}
+
+      {/* Modal */}
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3 }}
+            className="bg-white rounded-lg shadow-lg p-6 max-w-sm text-center"
+          >
+            <h3 className="text-lg font-semibold text-red-600 mb-4">
+              ⚠️ No Hosted Link
+            </h3>
+            <p className="text-gray-700 mb-6">
+              This project does not have a hosted link yet.
+            </p>
+            <button
+              onClick={() => setShowModal(false)}
+              className="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition"
+            >
+              Close
+            </button>
+          </motion.div>
         </div>
       )}
     </>
@@ -103,4 +140,3 @@ const DomainProjects = () => {
 };
 
 export default DomainProjects;
-

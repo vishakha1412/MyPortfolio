@@ -12,7 +12,7 @@ export const Social = () => {
     },
     {
       name: "Instagram",
-      url: "https://www.instagram.com/vishakhasharma8810/",
+      url: "https://www.instagram.com/vishakhasharma.1412/",
       icon: <FaInstagram className="text-pink-500" />,
     },
     {

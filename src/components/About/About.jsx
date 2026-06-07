@@ -3,9 +3,9 @@ import { NavLink } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import { FaGraduationCap, FaLaptopCode, FaBrain } from 'react-icons/fa';
 
 export const About = () => {
-
   useEffect(() => {
     AOS.init();
   }, []);
@@ -20,6 +20,7 @@ export const About = () => {
         backgroundPosition: 'center',
       }}
     >
+      {/* Heading */}
       <motion.h1
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -29,9 +30,8 @@ export const About = () => {
         About Me
       </motion.h1>
 
+      {/* Profile + Bio */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full max-w-6xl">
-        
-      
         <motion.div
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
@@ -40,11 +40,10 @@ export const About = () => {
           <img
             src="/vish.jpg"
             alt="Profile"
-            className="w-72 h-auto   rounded-3xl border-4 border-white   hover:scale-105 transition-transform duration-300 shadow-2xl"
+            className="w-72 h-auto rounded-3xl border-4 border-white hover:scale-105 transition-transform duration-300 shadow-2xl"
           />
         </motion.div>
 
-       
         <motion.div
           initial={{ x: 50, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
@@ -55,65 +54,73 @@ export const About = () => {
             <strong className="text-amber-300">I’m Vishakha Sharma.</strong><br />
             I build products, not just projects.
           </p>
-
           <p className="mb-4 text-white">
-            I’m a Third-year B.Tech student focused on full-stack development using the MERN stack, creating applications that are functional, scalable, and user-focused. My approach is simple—turn ideas into systems that actually solve problems.
+            I’m a Third-year B.Tech student focused on full-stack development using the MERN stack, creating applications that are functional, scalable, and user-focused.
           </p>
-
           <p className="mb-4 text-white">
             I’ve worked on projects involving real-world features like authentication, APIs, and responsive UI, while continuously improving my problem-solving and development workflow.
           </p>
-
           <p className="text-white">
-            Currently, I’m exploring Generative AI and multi-agent systems, learning how intelligent workflows can be integrated into modern applications. I’m especially interested in building systems where backend meets AI.
+            Currently, I’m exploring Generative AI and multi-agent systems, learning how intelligent workflows can be integrated into modern applications.
           </p>
         </motion.div>
       </div>
 
-       
+      {/* Info Cards */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 w-full max-w-6xl">
-
+        
+        {/* Education */}
         <motion.div
           data-aos="fade-up"
           className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl p-6 shadow-lg text-center hover:scale-105 transition-transform duration-300 shadow-gray-50"
         >
+          <div className="flex justify-center mb-4">
+            <FaGraduationCap className="text-amber-300 text-5xl drop-shadow-lg transform hover:rotate-12 transition-transform duration-300" />
+          </div>
           <h2 className="text-xl font-bold text-amber-300 mb-2">Education</h2>
-          <p>
+          <p className="text-white">
             B.Tech in Computer Science <br />
             JSS Academy of Technical Education <br />
             2024 - 2028
           </p>
         </motion.div>
 
+        {/* Tech Stack */}
         <motion.div
           data-aos="fade-up"
           data-aos-delay="100"
           className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl p-6 shadow-lg text-center hover:scale-105 transition-transform duration-300 shadow-gray-50"
         >
+          <div className="flex justify-center mb-4">
+            <FaLaptopCode className="text-amber-300 text-5xl drop-shadow-lg transform hover:rotate-12 transition-transform duration-300" />
+          </div>
           <h2 className="text-xl font-bold text-amber-300 mb-2">Tech Stack</h2>
-          <p>
+          <p className="text-white">
             MERN Stack <br />
             MongoDB, Express, React, Node.js <br />
             APIs & Git
           </p>
         </motion.div>
 
+        {/* Current Focus */}
         <motion.div
           data-aos="fade-up"
           data-aos-delay="200"
-          className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl p-6 shadow-lg text-center hover:scale-105 transition-transform duration-300 shadow-gray-50" 
+          className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl p-6 shadow-lg text-center hover:scale-105 transition-transform duration-300 shadow-gray-50"
         >
+          <div className="flex justify-center mb-4">
+            <FaBrain className="text-amber-300 text-5xl drop-shadow-lg transform hover:rotate-12 transition-transform duration-300" />
+          </div>
           <h2 className="text-xl font-bold text-amber-300 mb-2">Current Focus</h2>
-          <p>
+          <p className="text-white">
             Generative AI <br />
             Multi-Agent Systems <br />
             Real-world Project Building
           </p>
         </motion.div>
-
       </div>
 
-      
+      {/* Skills Button */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
@@ -126,7 +133,6 @@ export const About = () => {
           </button>
         </NavLink>
       </motion.div>
-
     </div>
   );
 };
