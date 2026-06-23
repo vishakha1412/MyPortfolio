@@ -31,6 +31,22 @@ const certificates = [
     date: 'Decemer 2025',
     image: '/secureverse.jpg',
   },
+  {
+    title:'yuva AI for all',
+    issuer:'',
+    date:'june 2026',
+    image:'/cert4.png'
+  },{
+    title:"Agents and Workflow",
+    issuer:"OpenAI Academy",
+    date:"June ,2026",
+    image:"/cert5.png"
+  },{
+    title:"Digital Application Fundamentals(STEM)",
+    issuer:"nasscom IT-ITeS SSC",
+    date:"June 2026",
+     image:"/cert6.png"
+  }
 ];
 export const Certificate = () => {
   const [selectedCert, setSelectedCert] = useState(null);

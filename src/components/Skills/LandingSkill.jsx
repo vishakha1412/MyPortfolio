@@ -5,9 +5,9 @@ import { motion } from 'framer-motion'
 const domains = [
   { label: "Web Development", path: "web", color: "from-purple-500 to-indigo-600" },
   { label: "CodingLanguage", path: "CodingLanguage", color: "from-green-500 to-teal-500" },
-  { label: "AI/ML", path: "ai", color: "from-pink-500 to-red-500" },
+  { label: "AI/ML and Data Scinece", path: "ai", color: "from-pink-500 to-red-500" },
   { label: "Design", path: "design", color: "from-yellow-400 to-orange-500" },
-  { label: "Data Science", path: "data", color: "from-blue-500 to-cyan-500" },
+  {label:"Deployment",path:" deployment",color:"from-pink-400 to-pink-700"},
   { label: "Others", path: "Others", color: "from-gray-500 to-gray-700" },
 ]
 

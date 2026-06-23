@@ -41,6 +41,7 @@ export const Home = () => {
       <Intro/> 
      
      <TechAnimation/>
+  
     <section
   id="about"
   className="flex flex-col justify-center items-center px-6 py-8 text-black  mt-10  mx-6 rounded-xl shadow-lg shadow-gray-400    border-2 border-gray-300    "

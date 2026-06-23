@@ -64,12 +64,21 @@ export const About = () => {
             Currently, I’m exploring Generative AI and multi-agent systems, learning how intelligent workflows can be integrated into modern applications.
           </p>
         </motion.div>
+       
       </div>
-
-      {/* Info Cards */}
+        <button
+    className="px-4 py-2 rounded-lg font-semibold text-black shadow-lg transition-all duration-300 bg-gradient-to-r from-fuchsia-300 via-slate-300 to-cyan-300 hover:from-purple-500 hover:via-cyan-500 hover:to-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-400 m-2 min-w-2xs xl:min-w-xl max-md:min-w-full text-center hover:scale-105 hover:shadow-xl font-serif hover:text-white mt-6"
+    aria-label="Download Resume"
+  >
+    <a href="/VishakhaResume.pdf" download className="block text-center text-base sm:text-lg">
+      Download Resume
+    </a>
+  </button>
+       
+     
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mt-10 w-full max-w-6xl">
         
-        {/* Education */}
+       
         <motion.div
           data-aos="fade-up"
           className="bg-white/10 backdrop-blur-lg border border-white/30 rounded-xl p-6 shadow-lg text-center hover:scale-105 transition-transform duration-300 shadow-gray-50"
@@ -85,7 +94,7 @@ export const About = () => {
           </p>
         </motion.div>
 
-        {/* Tech Stack */}
+       
         <motion.div
           data-aos="fade-up"
           data-aos-delay="100"
@@ -102,7 +111,7 @@ export const About = () => {
           </p>
         </motion.div>
 
-        {/* Current Focus */}
+        
         <motion.div
           data-aos="fade-up"
           data-aos-delay="200"
@@ -120,7 +129,7 @@ export const About = () => {
         </motion.div>
       </div>
 
-      {/* Skills Button */}
+      
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}

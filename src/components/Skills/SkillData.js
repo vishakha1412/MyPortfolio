@@ -3,11 +3,19 @@
  
   
 export const skillByDomain = {
-  web: ["HTML", "CSS", "JavaScript", "React", "Tailwind","Node.js", "Express", "MongoDB","Redux"],
-CodingLanguage: ["Java","Python","c"],
-  ai:  ["NumPy",'Pandas','Opencv'],// ["NumPy", "Pandas", "Scikit-learn", "TensorFlow", "Model Evaluation"],
+  web:["HTML", "CSS", "JavaScript", "TypeScript", "React",
+ "Next.js", "Tailwind CSS", "Node.js", "Express.js",
+ "MongoDB", "Mongoose", "Redux", "REST APIs",
+ "JWT Authentication"],
+CodingLanguage: ["Java","Python","c"],// "SQL",
+  ai:  ["NumPy",'Pandas', 'LangChain','RAG architecture','EDA(Exploratory data analysis)',  "Vector Databases", "ChromaDB", "Mistral AI", "Prompt Engineering",],
+  /*  "Scikit-learn",  "Matplotlib",
+  "Seaborn ,  "Machine Learning",
+  "Feature Engineering",
+  "Model Evaluation",
+  "Prompt Engineering", */
   design: [ "Canva"],
-  data:  [],
-  Others: ["Git", "VS Code", "Postman", "Responsive Design", "API Integration", "Bootstrap", "DSA"]
-
+ 
+  Others: ["Git", "VS Code", "Postman", "Responsive Design", "API Integration", "Bootstrap", "DSA"],
+  deployment:["vercel", "Render"]
 }
