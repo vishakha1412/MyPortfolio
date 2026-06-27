@@ -46,6 +46,11 @@ const certificates = [
     issuer:"nasscom IT-ITeS SSC",
     date:"June 2026",
      image:"/cert6.png"
+  },{
+    title:"Effective Leadership",
+    issuer:"Deloitte",
+    date:"june 2026",
+    image:"/cert7.png"
   }
 ];
 export const Certificate = () => {
