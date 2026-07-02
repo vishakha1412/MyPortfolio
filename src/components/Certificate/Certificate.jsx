@@ -14,11 +14,12 @@ const certificates = [
     image: '/cert1.jpg',
   },
   {
-    title: 'Data Science',
-    issuer: '1stop',
-    date: 'february 2025',
-    image: '/cert2.png',
+    title:"Exploratory Data Analysis",
+    issuer:"futureskills prime",
+    date:"july 2026",
+    image:"/cert8.png"
   },
+  
   {
     title: 'Frontend Development',
     issuer: 'Elite Coder',
@@ -51,7 +52,12 @@ const certificates = [
     issuer:"Deloitte",
     date:"june 2026",
     image:"/cert7.png"
-  }
+  },{
+    title: 'Data Science',
+    issuer: '1stop',
+    date: 'february 2025',
+    image: '/cert2.png',
+  },
 ];
 export const Certificate = () => {
   const [selectedCert, setSelectedCert] = useState(null);
