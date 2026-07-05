@@ -14,6 +14,12 @@ const certificates = [
     image: '/cert1.jpg',
   },
   {
+    title:'GenAI Powered Data Analytics Job Simulation',
+    issuer:'Forage',
+    date:'July 2026',
+    image:'/cert9.png'
+  },
+  {
     title:"Exploratory Data Analysis",
     issuer:"futureskills prime",
     date:"july 2026",
