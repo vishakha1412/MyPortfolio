@@ -3,10 +3,22 @@ import { projects } from "./projects";
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import React, { useState } from "react";
+import Swal from "sweetalert2";
 
 const DomainProjects = () => {
   const { domain } = useParams();
   const filtered = projects.filter((p) => p.domain === domain);
+  const handleProjectClick = (link) => {
+  if (!link || link.trim() === "" || link.includes("not available")) {
+    Swal.fire({
+      icon: "info",
+      title: "Not Deployed",
+      text: "This project is not deployed yet.",
+    });
+  } else {
+    window.open(link, "_blank", "noopener,noreferrer");
+  }
+};
 
   const [showModal, setShowModal] = useState(false);
 
@@ -76,7 +88,7 @@ const DomainProjects = () => {
                   <div className="flex items-center gap-4">
                     {/* Conditional navigation */}
                     <button
-                      onClick={() => handleViewProject(project.link)}
+                      onClick={() => handleProjectClick(project.link)}
                       className="inline-block mt-4 text-sm font-medium text-blue-600 hover:underline transition duration-300 float-start"
                     >
                       View Project →

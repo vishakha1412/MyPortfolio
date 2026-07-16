@@ -8,14 +8,14 @@ export const skillByDomain = {
  "MongoDB", "Mongoose", "Redux", "REST APIs",
  "JWT Authentication"],
 CodingLanguage: ["Java","Python","c"],// "SQL",
-  ai:  ["NumPy",'Pandas', 'LangChain','RAG architecture','EDA(Exploratory data analysis)',  "Vector Databases", "ChromaDB", "Mistral AI", "Prompt Engineering",],
-  /*  "Scikit-learn",  "Matplotlib",
-  "Seaborn ,  "Machine Learning",
+  ai:  ["NumPy",'Pandas', 'LangChain','RAG architecture','EDA(Exploratory data analysis)',  "Vector Databases", "ChromaDB", "Mistral AI", "Prompt Engineering","Scikit-learn","Basic Machine Learning"],
+  /*  ,  "Matplotlib",
+  "Seaborn ,  ,
   "Feature Engineering",
   "Model Evaluation",
   "Prompt Engineering", */
   design: [ "Canva"],
  
-  Others: ["Git", "VS Code", "Postman", "Responsive Design", "API Integration", "Bootstrap", "DSA"],
+  Others: ["Git", "VS Code", "Postman", "Responsive Design", "API Integration", "Bootstrap", "DSA","colabNotebook"],
   deployment:["vercel", "Render"]
 }

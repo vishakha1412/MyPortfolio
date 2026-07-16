@@ -25,6 +25,12 @@ const certificates = [
     date:"july 2026",
     image:"/cert8.png"
   },
+  {
+    title:"Aritificial Intelligence Tutorial",
+    issuer:"IBM SkillsBuild",
+    date:"july 2026",
+    image:"/cert10.png"
+  },
   
   {
     title: 'Frontend Development',
