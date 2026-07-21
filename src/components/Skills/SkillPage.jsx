@@ -14,6 +14,12 @@ export const SkillPage = () => {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.6 }}
+      style={{
+        backgroundImage: 'url("/bg1.jpg")',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
       <motion.div
         className="max-w-3xl mx-auto bg-white rounded-2xl shadow-xl border border-indigo-300 overflow-hidden"

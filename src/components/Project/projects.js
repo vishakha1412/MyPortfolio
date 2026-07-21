@@ -7,7 +7,8 @@ export const projects = [
     domain:"AI-ML",
     description:"ResearchGuru is an AI-powered research assistant that leverages Generative AI with LangChain, integrating Mistral AI and Tavily API.The system allows users to input a topic → searches the web using Tavily → generates a concise summary using Mistral AI → serves results through a FastAPI backend → consumed by a React.js frontend.",
     tech:["Python","Langchain","AI APIs","Reactjs"],
-    github: "https://github.com/vishakha1412/Research_Generative_AI"
+    github: "https://github.com/vishakha1412/Research_Generative_AI",
+    underDevelopment:false
   },
    {
     id:2,
@@ -28,6 +29,21 @@ export const projects = [
     description:"EventConnect is a dynamic event management platform that simplifies the process of creating, organizing, and attending events. With an intuitive interface and powerful features, EventConnect allows users to effortlessly plan and manage events of all sizes. Whether you're hosting a small gathering or a large conference, EventConnect provides tools for seamless event creation, attendee registration, and real-time updates. Stay connected with your audience and make every event a success with EventConnect.",
     tech:["React","Tailwind","nodejs","Express","MongoDB"], 
     github: "https://github.com/vishakha1412/eventrise"
+  },
+  {
+    id:12,
+    title:"FeedBack Colllection System",
+    image:'/feedbackform.png',
+     //link:"not available",
+     domain:"Web Development",
+     description:"A multi-organisation feedback collection system built with MongoDB, Express, React (Vite + Tailwind CSS + Framer Motion), and Node.js.",
+     tech:["React","Tailwind","nodejs","Express","MongoDB",'Framer Motion'], 
+     github:"https://github.com/vishakha1412/Feedback_Collection-wheeltrix-",
+      underDevelopment:true
+
+
+
+
   },
   {
     id:11,

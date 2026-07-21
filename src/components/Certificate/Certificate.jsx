@@ -31,6 +31,18 @@ const certificates = [
     date:"july 2026",
     image:"/cert10.png"
   },
+  {
+    title:"Digital Application Fundamentals ASSESSMENT",
+    issuer:"futureskills prime/ nasscom",
+    date:"july 2026",
+    image:"/daf-assistment.png"
+  },
+  {
+      title:"Exploratory Data Analysis ASSESSMENT",
+    issuer:"futureskills prime/ nasscom",
+    date:"july 2026",
+    image:"/eda-assistment.png"
+  },
   
   {
     title: 'Frontend Development',
